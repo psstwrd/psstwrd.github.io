@@ -1,88 +1,9 @@
-:root {
-    --primary: #2ecc71;
-    --background: #f8f9fa;
-    --text: #2c3e50;
+.error {
+    color: #e74c3c;
+    margin-top: 1rem;
+    display: none;
 }
 
-body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 2rem;
-    background: var(--background);
-    color: var(--text);
-}
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-h1 {
-    color: var(--primary);
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-input[type="number"] {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 70px;
-}
-
-button {
-    background: var(--primary);
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-button:hover {
-    opacity: 0.9;
-}
-
-#password {
-    width: 100%;
-    padding: 1rem;
-    margin-top: 1.5rem;
-    font-size: 1.2rem;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-}
-
-.result {
-    position: relative;
-}
-
-#copyBtn {
-    position: absolute;
-    right: 0.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0.5rem;
-    background: transparent;
-    color: var(--text);
-}
-
-.checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.error.visible {
+    display: block;
 }
